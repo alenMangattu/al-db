@@ -6,6 +6,8 @@
 		"ssl.h": "c",
 		"err.h": "c",
 		"ncurses.h": "c",
-		"libpq-fe.h": "c"
+		"libpq-fe.h": "c",
+		"server.h": "c",
+		"connectdb.h": "c"
 	}
 }

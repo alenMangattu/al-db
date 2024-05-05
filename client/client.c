@@ -2,6 +2,8 @@
 #include <ncurses.h>
 
 int main() {
+
+  listenServer();
   
   initscr();
 
