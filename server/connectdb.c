@@ -11,11 +11,11 @@ void turnOff(FILE* stream) {
     //https://stackoverflow.com/questions/6856635/hide-password-input-on-terminal
 
     if (tcgetattr (fileno (stream), &old) != 0)
-        return -1;
+        return;
     new = old;
     new.c_lflag &= ~ECHO;
     if (tcsetattr (fileno (stream), TCSAFLUSH, &new) != 0)
-        return -1;
+        return;
 }
 
 void turnOn(FILE* stream) {

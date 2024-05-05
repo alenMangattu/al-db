@@ -1,5 +1,5 @@
 # List of source files
-SOURCES := main.c connectdb.c connectdb.h
+SOURCES := connectdb.c connectdb.h loop.c loop.h main.c
 CC := gcc
 CFLAGS := -Wall -Wextra -g -Wpedantic
 LIBS = -lpq
